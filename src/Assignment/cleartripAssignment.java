@@ -1,4 +1,4 @@
-package SeleniumBasic;
+package Assignment;
 
 import java.util.HashMap;
 import java.util.Map;

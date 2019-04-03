@@ -4,6 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -60,9 +62,31 @@ public class PracticePage {
 		alert.accept();
 		
 		Thread.sleep(1000);
+		
+		WebElement selectCountry = driver.findElement(By.id("autocomplete"));
+		selectCountry.sendKeys("uni");		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		String script = "return document.getElementById(\"autocomplete\").value;";
+		String text = (String)js.executeScript(script);
+		int i=0;
+		while(!text.contains("United Kingdom")) {
+			i++;
+			selectCountry.sendKeys(Keys.DOWN);
+			text = (String)js.executeScript(script);
+			System.out.println(text);
+			Thread.sleep(1000);
+			
+			if(i>6) {
+				System.out.println("Element not found");
+				break;
+			}
+			else {
+				Assert.assertTrue(true);				
+			}
+		}
+		System.out.println("Test completed");
 		driver.close();
 		driver.quit();
-
 
 	}
 

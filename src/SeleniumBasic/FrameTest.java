@@ -45,6 +45,9 @@ public class FrameTest {
 		System.out.println(droppedText);		
 		// here printed out "droppedText" is : null , why ?
 		Assert.assertEquals(droppedText, "Dropped!");
+		
+		driver.close();
+		driver.quit();
 
 	}
 

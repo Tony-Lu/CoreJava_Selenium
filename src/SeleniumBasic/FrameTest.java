@@ -13,7 +13,7 @@ import org.testng.Assert;
 public class FrameTest {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "F:\\toolDownloaded\\chromedriver.exe");	
+//		System.setProperty("webdriver.chrome.driver", "F:\\toolDownloaded\\chromedriver.exe");	
 		//below is setting for chrome language:
 		ChromeOptions op = new ChromeOptions();
 		op.addArguments("--lang=en-US");

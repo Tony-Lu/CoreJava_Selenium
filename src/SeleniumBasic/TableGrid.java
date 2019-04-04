@@ -32,7 +32,7 @@ public class TableGrid {   //No. 97-100 + No. 105 - takescreenshots
 		// concept of sub-object/sections:
 		WebElement table = driver.findElement(By.cssSelector("div[class='cb-col cb-col-100 cb-ltst-wgt-hdr']"));
 		int rowCount = table.findElements(By.cssSelector("div[class='cb-col cb-col-100 cb-scrd-itms']")).size();
-		//		int rowCount = table.findElements(By.cssSelector("cb-col cb-col-100 cb-scrd-itms")).size(); // ???? why turor works ?
+		//		int rowCount = table.findElements(By.cssSelector("cb-col cb-col-100 cb-scrd-itms")).size(); // ???? why Rhaul's on video works ?
 		int colCount = table.findElements(By.cssSelector("div[class='cb-col cb-col-100 cb-scrd-itms'] div:nth-child(3)")).size();
 
 		for(int i=0;i<colCount-2;i++) {

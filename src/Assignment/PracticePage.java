@@ -2,6 +2,8 @@ package Assignment;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -15,7 +17,13 @@ import org.testng.Assert;
 
 public class PracticePage {
 
+	private static final Logger logger = LogManager.getLogger(PracticePage.class.getName());
+	
+	
 	public static void main(String[] args) throws InterruptedException {
+		
+		
+		
 		System.setProperty("webdriver.chrome.driver", "F:\\toolDownloaded\\chromedriver.exe");	
 		//below is setting for chrome language:
 		ChromeOptions op = new ChromeOptions();
@@ -87,6 +95,12 @@ public class PracticePage {
 		System.out.println("Test completed");
 		driver.close();
 		driver.quit();
+		
+		  logger.debug("Entering application.");
+		  logger.info("Object is present");
+	      logger.error("Didn't do it.");
+	      logger.trace("Exiting application.");
+	  	
 
 	}
 

@@ -1,0 +1,5 @@
+[TRACE] 2019-04-05 11:20:46.719 [main] PracticePage - Exiting application.
+[DEBUG] 2019-04-05 11:23:22.395 [main] PracticePage - Entering application.
+[INFO ] 2019-04-05 11:23:22.425 [main] PracticePage - Object is present
+[ERROR] 2019-04-05 11:23:22.425 [main] PracticePage - Didn't do it.
+[TRACE] 2019-04-05 11:23:22.425 [main] PracticePage - Exiting application.

@@ -68,6 +68,7 @@ public class TableGrid {   //No. 97-100 + No. 105 - takescreenshots
 
 		driver.close();
 		driver.quit();
+		driver=null;
 
 	}
 

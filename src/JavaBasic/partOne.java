@@ -9,7 +9,7 @@ public class partOne {
 		int var = arr[0];
 		
 		for(int i=0; i<arr.length; i++) {
-			if(arr[i]<var) {
+			if(arr[i]>var) {
 				var=arr[i];
 			}
 		}

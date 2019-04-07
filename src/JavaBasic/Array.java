@@ -1,5 +1,7 @@
 package JavaBasic;
 
+import java.util.ArrayList;
+
 public class Array {
 
 	public static void main(String[] args) {
@@ -41,6 +43,19 @@ public class Array {
 			}
 		}
 		System.out.println("Second Test result is: "+min);
+		
+		ArrayList<String> arrNew = new ArrayList<String>();
+		arrNew.add("abc");
+		arrNew.add("java");
+		arrNew.add("tank");
+		System.out.println(arrNew.get(2));
+		System.out.println(arrNew.contains("test"));
+		System.out.println(arrNew.indexOf("tank"));
+		arrNew.size();
+		arrNew.isEmpty();
+		arrNew.set(2, "test");
+		System.out.println(arrNew);
+		
 
 	}
 

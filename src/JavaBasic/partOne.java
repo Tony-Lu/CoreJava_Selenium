@@ -1,5 +1,7 @@
 package JavaBasic;
 
+import org.seleniumhq.jetty9.util.thread.TryExecutor;
+
 public class partOne {
 	
 	public static void main(String[] args) {
@@ -69,6 +71,15 @@ public class partOne {
 		x[2][4] = "e2";
 		
 		System.out.println(x[1][2]);
+		try {
+			
+		} catch (Exception e2) {
+			// TODO: handle exception
+		}
+		finally{
+			// only if you stop JVM during execution forcibly
+		}
+		
 		
 		for(int row=0;row<x.length;row++) {
 			for(int col=0;col<x[0].length;col++) {
@@ -78,6 +89,8 @@ public class partOne {
 			
 			
 		}
+	
+	
 	}
 	
 	

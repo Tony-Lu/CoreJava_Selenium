@@ -1,13 +1,17 @@
 package InterfaceConcept;
 
-public class Developing implements BankingClient{
+public class Developing implements BankingClient, RetailClient {   
 	
 	public static void main(String[] args) {
 		Developing d = new Developing();
 		d.paycreditcard();
 		d.login();
+		
 		BankingClient dr = new Developing();
 		dr.paycreditcard();
+		
+		RetailClient rc = new Developing();
+		rc.retailcCheckingbalance();
 	}
 
 	@Override
@@ -30,6 +34,24 @@ public class Developing implements BankingClient{
 
 	public void login() {
 		System.out.println("logged onto the site");
+	}
+
+	@Override
+	public void retailPaycreditcard() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void retailTransferbalance() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void retailcCheckingbalance() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }

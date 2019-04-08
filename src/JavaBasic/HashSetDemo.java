@@ -17,6 +17,8 @@ public class HashSetDemo {
 		hs.add("test3");
 		hs.add("test4");
 		hs.add("test5");
+		hs.add("test5");
+		hs.add("test5");
 		
 		Iterator<String> it = hs.iterator();
 //		System.out.println(it.next());
